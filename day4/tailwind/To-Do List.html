@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center bg-purple-200">
+    <main class="bg-purple shadow-lg rounded-lg w-full p-6">
+        <div>
+            <!--div1 heading-->
+            <h1 class="text-3xl font-bold text-blue-800">To-Do List</h1>
+        </div>
+
+        <div class="mt-4">
+            <!--div2 heading-->
+            <form class="flex gap-5 mb-5 mt-5">
+            <input class="border border-black rounded px-2" type="text" placeholder="Add a new task...">
+            <button class="text-white font-bold px-2 bg-blue-600 rounded-lg m-2 px-4">Add</button>
+            </form>
+        </div>
+        <div class="mt-4">
+            <!--div3 to-do list-->
+            <ul class="space-y-2">
+                <li class="flex"><input type="checkbox" class="mr-3">Task-1
+                    <button class="ml-auto hover:text-red-500 text-xl px-2">&times;</button>
+                </li>
+
+                <li class="flex"><input type="checkbox" class="mr-3">Task-3
+                    <button class="ml-auto hover:text-red-500 text-xl px-2">&times;</button>
+                </li>
+
+                <li class="flex"><input type="checkbox" class="mr-3">Task-5
+                    <button class="ml-auto hover:text-red-500 text-xl px-2">&times;</button>
+                </li>
+
+                <li class="flex"><input type="checkbox" class="mr-3">Task-2
+                    <button class="ml-auto hover:text-red-500 text-xl px-2">&times;</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <!--div4 heading-->
+            <h2 class="font-bold mb-2 text-purple-800 text-lg">Task completed !</h2>
+            <ul class="space-y-1">
+                <li><input type="checkbox" checked class="mr-3">Task-4</li>
+                <li><input type="checkbox" checked class="mr-3">Task-6</li>
+                <li><input type="checkbox" checked class="mr-3">Task-7</li>
+                <li><input type="checkbox" checked class="mr-3">Task-8</li>
+            </ul>
+        </div>
+    </main>
+
+
+</body>
+
+
+</html>
