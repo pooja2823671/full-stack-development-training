@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+    <script>
+        // internal javascript
+        function handleInput() {
+            // here we take input from day input field by id
+            let day = parseInt(document.getElementById("day").value);
+
+            // here find the day category based on the day input 
+            let result = "";
+            switch (day) {
+                case 1:
+                    result = "Sunday";
+                    break;
+                case 2:
+                    result = "Monday";
+                    break;
+                case 3:
+                    result = "Tuesday";
+                    break;
+                case 4:
+                    result = "Wednesday";
+                    break;
+                case 5:
+                    result = "Thursday";
+                    break;
+                case 6:
+                    result = "Friday";
+                    break;
+                case 7:
+                    result = "Saturday";
+                    break;
+                default:
+                    result = "invalid day";
+            }
+
+            // here we set the result in the p tag with id result
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Find the day of the week</h1>
+    <label>Enter day number(1-7)</label>
+    <!-- day input field -->
+    <input type="number" id="day" placeholder="Enter day">
+    <button onclick="handleInput()">check</button>
+
+    <!-- p tag field -->
+    <p id="result"></p>
+</body>
+
+
+</html>
